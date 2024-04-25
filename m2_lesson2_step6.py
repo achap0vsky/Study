@@ -21,6 +21,7 @@ try:
   input1.send_keys(y)
   checkbox1 = browser.find_element(By.ID, "robotCheckbox").click()
   radiobutton1 = browser.find_element(By.ID, "robotsRule")
+
   browser.execute_script("return arguments[0].scrollIntoView(true);",radiobutton1)
   radiobutton1.click()
 

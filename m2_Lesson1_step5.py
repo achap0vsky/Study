@@ -17,6 +17,7 @@ try:
 
   input1 = browser.find_element(By.ID, "answer")
   input1.send_keys(y)
+
   checkbox1 = browser.find_element(By.ID,"robotCheckbox")
   checkbox1.click()
   radiobutton1 = browser.find_element(By.ID,"robotsRule")

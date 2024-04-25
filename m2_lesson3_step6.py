@@ -20,6 +20,7 @@ try:
   x = x_element.text
   print(x)
   y = calc(x)
+
   input1 = browser.find_element(By.ID, "answer")
   input1.send_keys(y)
   button1 = browser.find_element(By.XPATH, "//button[@type='submit']")

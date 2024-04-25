@@ -15,6 +15,7 @@ try:
   y = y_element.text
   answer = int(x)+int(y)
   print(answer)
+
   select = Select(browser.find_element(By.TAG_NAME, "select"))
   select.select_by_value(str(answer))
 

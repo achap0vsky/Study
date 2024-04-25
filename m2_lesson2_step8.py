@@ -12,6 +12,7 @@ try:
 
   input1 = browser.find_element(By.CSS_SELECTOR, "input[name='firstname']")
   input1.send_keys("Ivan")
+
   input2 = browser.find_element(By.CSS_SELECTOR, "input[name='lastname']")
   input2.send_keys("Ivanov")
   input3 = browser.find_element(By.CSS_SELECTOR, "input[name='email']")
