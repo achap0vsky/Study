@@ -1,16 +1,9 @@
-from selenium import webdriver
-import time
-from selenium.webdriver.common.by import By
+s = 'My Name is Julia'
 
-link = "http://suninjuly.github.io/simple_form_find_task.html"
+if 'Name' in s:
+    print('Substring found')
 
-try:
-    browser = webdriver.Chrome()
-    browser.get(link)
-    button = browser.find_element(By.ID, "submit_button")
-    button.click()
-    time.sleep(5)
-
-finally:
-    # закрываем браузер после всех манипуляций
-    browser.quit()
+index = s.find('Name')
+if index != -1:
+    print(f'Substring found at index {index}')
+    print(f'SubstriSindex')
